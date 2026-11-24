@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+body{@apply bg-slate-50 text-slate-800 antialiased font-sans}
+.dark body{@apply bg-[#0a0a0f] text-slate-300}
+.glass{@apply rounded-2xl border border-slate-200 bg-white/70 backdrop-blur-xl shadow-sm}
+.dark .glass{@apply border-white/10 bg-white/[0.04] shadow-none}
+.grad{@apply bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent}
+.btn{@apply inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-40px)}}
